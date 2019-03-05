@@ -86,7 +86,7 @@ Status  InitList_Sq(SqList &L) {
     L.length = 0;
     L.listsize = LIST_INIT_SIZE;
     return OK;
-}
+}  // InitList_Sq
 
 Status ListInsert_Sq(SqList &L, int i, ElemType e) {
     // 在顺序线性表中第 i 个位置之前插入新的元素 e
@@ -183,4 +183,4 @@ Status DestroyList_Sq(SqList &L) {
     // 销毁线性表
     free(L.elem);
     return OK;
-}
+}  // DestroyList_Sq
